@@ -21,10 +21,12 @@ class PagesController extends Controller
             'id' => $id,
             'cost' => $cost
         );
+        $data = ['Web Design', 'Programming', 'SEO', 'Marketing'];
         //return 'Service with id = ' . $id . ' and cost = ' . $costo;
         return View('pages/services', [
             'id' => $id,
-            'cost' => $cost
+            'cost' => $cost,
+            'services' => $data
         ]);
     }
 }
